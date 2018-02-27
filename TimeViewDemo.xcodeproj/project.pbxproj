@@ -12,6 +12,8 @@
 		7489F10420455D7C00E6178B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7489F10220455D7C00E6178B /* Main.storyboard */; };
 		7489F10620455D7C00E6178B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7489F10520455D7C00E6178B /* Assets.xcassets */; };
 		7489F10920455D7C00E6178B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7489F10720455D7C00E6178B /* LaunchScreen.storyboard */; };
+		7489F11120455E1E00E6178B /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489F11020455E1E00E6178B /* TimeView.swift */; };
+		7489F115204560BA00E6178B /* TimeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489F114204560BA00E6178B /* TimeBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7489F10520455D7C00E6178B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7489F10820455D7C00E6178B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7489F10A20455D7C00E6178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7489F11020455E1E00E6178B /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		7489F114204560BA00E6178B /* TimeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				7489F10520455D7C00E6178B /* Assets.xcassets */,
 				7489F10720455D7C00E6178B /* LaunchScreen.storyboard */,
 				7489F10A20455D7C00E6178B /* Info.plist */,
+				7489F11020455E1E00E6178B /* TimeView.swift */,
+				7489F114204560BA00E6178B /* TimeBar.swift */,
 			);
 			path = TimeViewDemo;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				7489F10120455D7C00E6178B /* ViewController.swift in Sources */,
 				7489F0FF20455D7C00E6178B /* AppDelegate.swift in Sources */,
+				7489F115204560BA00E6178B /* TimeBar.swift in Sources */,
+				7489F11120455E1E00E6178B /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TimeViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ata.TimeViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TimeViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ata.TimeViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
