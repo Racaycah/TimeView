@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		748896C62046C2890055EE88 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748896C52046C2890055EE88 /* SliderViewController.swift */; };
 		7489F0FF20455D7C00E6178B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489F0FE20455D7C00E6178B /* AppDelegate.swift */; };
 		7489F10120455D7C00E6178B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489F10020455D7C00E6178B /* ViewController.swift */; };
 		7489F10420455D7C00E6178B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7489F10220455D7C00E6178B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		748896C52046C2890055EE88 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		7489F0FB20455D7C00E6178B /* TimeViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7489F0FE20455D7C00E6178B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7489F10020455D7C00E6178B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		748896C72046C2900055EE88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7489F10020455D7C00E6178B /* ViewController.swift */,
+				748896C52046C2890055EE88 /* SliderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		748896C82046C29F0055EE88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7489F114204560BA00E6178B /* TimeBar.swift */,
+				7489F11020455E1E00E6178B /* TimeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7489F0F220455D7C00E6178B = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +78,13 @@
 		7489F0FD20455D7C00E6178B /* TimeViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				748896C82046C29F0055EE88 /* Views */,
+				748896C72046C2900055EE88 /* Controllers */,
 				7489F0FE20455D7C00E6178B /* AppDelegate.swift */,
-				7489F10020455D7C00E6178B /* ViewController.swift */,
 				7489F10220455D7C00E6178B /* Main.storyboard */,
 				7489F10520455D7C00E6178B /* Assets.xcassets */,
 				7489F10720455D7C00E6178B /* LaunchScreen.storyboard */,
 				7489F10A20455D7C00E6178B /* Info.plist */,
-				7489F11020455E1E00E6178B /* TimeView.swift */,
-				7489F114204560BA00E6178B /* TimeBar.swift */,
 			);
 			path = TimeViewDemo;
 			sourceTree = "<group>";
@@ -142,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7489F10120455D7C00E6178B /* ViewController.swift in Sources */,
+				748896C62046C2890055EE88 /* SliderViewController.swift in Sources */,
 				7489F0FF20455D7C00E6178B /* AppDelegate.swift in Sources */,
 				7489F115204560BA00E6178B /* TimeBar.swift in Sources */,
 				7489F11120455E1E00E6178B /* TimeView.swift in Sources */,
