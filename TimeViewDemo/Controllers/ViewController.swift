@@ -14,7 +14,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         timeView.subviews.forEach { $0.removeFromSuperview() }
         let sv = UIStackView(arrangedSubviews: timeView.bars)
         sv.axis = .horizontal
@@ -26,6 +25,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
             guard i % (timeView.hourSection) == 0 && i != 0 else { continue }
             if #available(iOS 11.0, *) {
                 sv.setCustomSpacing(3, after: sv.arrangedSubviews[i])
+                let bar = sv.arrangedSubviews[i] as! TimeBar
+                let lbl = UILabel()
+                lbl.sizeToFit()
+                lbl.translatesAutoresizingMaskIntoConstraints = false
+                lbl.text = "\(bar.hourValue!)"
+                view.addSubview(lbl)
+                lbl.bottomAnchor.constraint(equalTo: timeView.topAnchor, constant: -10).isActive = true
+                lbl.leftAnchor.constraint(equalTo: timeView.leftAnchor, constant: timeView.frame.width / CGFloat(timeView.bars.count) * CGFloat(i)).isActive = true
+                lbl.heightAnchor.constraint(equalToConstant: 30).isActive = true
+                lbl.widthAnchor.constraint(equalToConstant: 100).isActive = true
             } else {
                 // Fallback on earlier versions
                 continue
